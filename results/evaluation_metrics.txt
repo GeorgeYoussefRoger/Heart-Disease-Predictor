@@ -1,0 +1,40 @@
+=== Logistic Regression Evaluation ===
+Accuracy: 0.639344262295082
+Precision: 0.5772148951614008
+Recall: 0.639344262295082
+F1 Score: 0.6027515802394584
+AUC Score: 0.8276668822875719
+
+=== Decision Tree Evaluation ===
+Accuracy: 0.4918032786885246
+Precision: 0.4585480093676816
+Recall: 0.4918032786885246
+F1 Score: 0.47436837029893925
+AUC Score: 0.5319357947288982
+
+=== Random Forest Evaluation ===
+Accuracy: 0.5573770491803278
+Precision: 0.4449648711943794
+Recall: 0.5573770491803278
+F1 Score: 0.4944262295081967
+AUC Score: 0.7733462705876499
+
+=== SVM Evaluation ===
+Accuracy: 0.5409836065573771
+Precision: 0.41898589401448727
+Recall: 0.5409836065573771
+F1 Score: 0.4719585849870578
+AUC Score: 0.7905160305849961
+
+=== Model Comparison ===
+                        Baseline Accuracy  Tuned Accuracy
+Logistic Regression           0.639344        0.655738
+Decision Tree                 0.491803        0.459016
+Random Forest                 0.557377        0.573770
+SVM                           0.540984        0.622951
+
+Conclusion:
+1. Logistic Regression performed best overall, with the highest AUC and solid improvements after tuning making it the best model.
+2. SVM also achieved a strong AUC and improved significantly after tuning making it a good secondary candidate.
+3. Random Forest showed moderate performance.
+4. Decision Tree performed poorly and is not suitable for deployment.
