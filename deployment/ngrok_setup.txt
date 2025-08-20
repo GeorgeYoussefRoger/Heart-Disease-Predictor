@@ -1,0 +1,29 @@
+# Ngrok Setup Instructions
+
+This document provides step-by-step instructions for deploying the Streamlit UI using Ngrok to make it publicly accessible.
+
+## Prerequisites
+
+* Ngrok Account: Sign up for a free account at [ngrok.com](https://ngrok.com/).
+* Ngrok Authtoken: Obtain your authtoken from the Ngrok dashboard after signing up.
+
+## Steps
+
+1.  Install Ngrok Library: Ensure you have the Ngrok library installed in your project's environment. This should be handled by your `requirements.txt` file, but you can install it manually if needed.
+
+    pip install pyngrok
+
+
+2.  Authenticate Ngrok: Add your authtoken to your system. This only needs to be done once. Replace `<YOUR_AUTH_TOKEN>` with the token from your dashboard.
+
+    ngrok authtoken <YOUR_AUTH_TOKEN>
+
+3.  Run Streamlit App: Start your Streamlit application from the `ui/` directory.
+
+    streamlit run ui/app.py
+
+4.  Forward Traffic with Ngrok: Open a new terminal and run Ngrok to forward traffic to the port that Streamlit is running on (usually `8501`).
+
+    ngrok http 8501
+
+5.  Access the Public URL: Ngrok will provide a public URL (e.g., `https://<random-id>.ngrok-free.app`). Share this URL with others to give them live access to your Streamlit application.
