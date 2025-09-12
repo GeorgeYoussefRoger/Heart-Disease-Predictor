@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # Loading the saved model
 model = joblib.load("models/final_model.pkl")
-df = pd.read_csv("data/heart_disease.csv")
+df = pd.read_csv("data/selected_feature_heart_disease.csv")
 
 st.title("❤️ Heart Disease Prediction App")
 st.write("Enter patient details below to predict the risk of heart disease.")
