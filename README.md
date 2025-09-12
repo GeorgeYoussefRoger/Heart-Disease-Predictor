@@ -1,9 +1,9 @@
-# ❤️ Heart Disease Predictor
+# Heart Disease Predictor
 
-## 📌 Overview
 This project applies Machine Learning techniques to predict the presence of heart disease using the UCI Heart Disease dataset. It includes data preprocessing, supervised & unsupervised learning, model evaluation, hyperparameter tuning and deployment through a Streamlit web app with Ngrok for public access.
 
-## 📂 Project Structure
+## Project Structure
+
 ```
 Heart_Disease_Project/
 ├── data/
@@ -28,7 +28,8 @@ Heart_Disease_Project/
 ├── .gitignore
 ```
 
-## ⚙️ Methodology
+## Methodology
+
 1. Data Preprocessing
    - Handled missing values using imputation
    - Encoded categorical variables with One-Hot Encoding
@@ -54,11 +55,12 @@ Heart_Disease_Project/
    - Applied GridSearchCV and RandomizedSearchCV
    - Selected the best model based on tuned performance
 
-## 📊 Dataset
+## Dataset
+
 - Source: UCI Heart Disease Dataset => https://archive.ics.uci.edu/dataset/45/heart+disease
 - Used Cleveland database
 
-## 🚀 Deployment
+## Deployment
 
 1. Clone this repository and install dependencies:
    ```
@@ -69,12 +71,15 @@ Heart_Disease_Project/
    ```
    ```
    pip install -r requirements.txt
-3. Run the Streamlit app
+   ```
+2. Run the Streamlit app
    ```
    streamlit run ui/app.py
-4. Share to the internet with Ngrok:
+   ```
+3. Share to the internet with Ngrok:
    See deployment/ngrok_setup.txt for step-by-step instructions.
 
-## 🌐 Features in the App
+## Features in the App
+
 - Users can input patient details (age, blood pressure, cholesterol, chest pain type, etc.).
 - The model predicts risk of heart disease (No Risk vs. Risk Levels).
