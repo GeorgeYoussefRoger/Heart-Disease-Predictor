@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 model = joblib.load("models/final_model.pkl")
 df = pd.read_csv("data/selected_feature_heart_disease.csv")
 
-st.title("❤️ Heart Disease Prediction App")
+st.title("❤️ Heart Disease Predictor")
 st.write("Enter patient details below to predict the risk of heart disease.")
 
 # Input fields

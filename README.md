@@ -64,10 +64,10 @@ Heart_Disease_Project/
 
 1. Clone this repository and install dependencies:
    ```
-   git clone https://github.com/GeorgeYoussefRoger/heart-disease-predictor.git
+   git clone https://github.com/GeorgeYoussefRoger/Heart-Disease-Predictor.git
    ```
    ```
-   cd heart-disease-predictor
+   cd Heart-Disease-Predictor
    ```
    ```
    pip install -r requirements.txt

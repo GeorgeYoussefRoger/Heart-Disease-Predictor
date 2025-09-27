@@ -13,7 +13,6 @@ This document provides step-by-step instructions for deploying the Streamlit UI 
 
     pip install pyngrok
 
-
 2.  Authenticate Ngrok: Add your authtoken to your system. This only needs to be done once. Replace `<YOUR_AUTH_TOKEN>` with the token from your dashboard.
 
     ngrok authtoken <YOUR_AUTH_TOKEN>
