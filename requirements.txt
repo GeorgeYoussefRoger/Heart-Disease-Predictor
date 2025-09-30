@@ -5,3 +5,4 @@ pyngrok==7.3.0
 scikit-learn==1.7.1
 seaborn==0.13.2
 streamlit==1.48.1
+xgboost==3.0.5
