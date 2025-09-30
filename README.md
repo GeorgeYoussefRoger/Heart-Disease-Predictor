@@ -31,14 +31,14 @@ Heart_Disease_Project/
 ## Methodology
 
 1. Data Preprocessing
-   - Handled missing values using imputation
+   - Handled missing values by removal
    - Encoded categorical variables with One-Hot Encoding
    - Visualized distributions and outliers with boxplots
 2. Dimensionality Reduction (PCA)
    - Reduced feature space while retaining 90%+ variance
    - Cumulative variance plot to determine optimal components
 3. Feature Selection
-   - Random Forest feature importance
+   - XGBoost feature importance
    - Recursive Feature Elimination (RFE)
    - Chi-Square test
 4. Supervised Learning
@@ -78,8 +78,3 @@ Heart_Disease_Project/
    ```
 3. Share to the internet with Ngrok:
    See deployment/ngrok_setup.txt for step-by-step instructions.
-
-## Features in the App
-
-- Users can input patient details (age, blood pressure, cholesterol, chest pain type, etc.).
-- The model predicts risk of heart disease (No Risk vs. Risk Levels).
