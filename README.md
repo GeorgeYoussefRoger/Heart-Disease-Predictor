@@ -78,8 +78,3 @@ Heart_Disease_Project/
    ```
 3. Share to the internet with Ngrok:
    See deployment/ngrok_setup.txt for step-by-step instructions.
-
-## Features in the App
-
-- Users can input patient details (age, blood pressure, cholesterol, chest pain type, etc.).
-- The model predicts risk of heart disease (No Risk vs. Risk Levels).
