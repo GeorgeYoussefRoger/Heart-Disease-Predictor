@@ -38,7 +38,7 @@ Heart_Disease_Project/
    - Reduced feature space while retaining 90%+ variance
    - Cumulative variance plot to determine optimal components
 3. Feature Selection
-   - Random Forest feature importance
+   - XGBoost feature importance
    - Recursive Feature Elimination (RFE)
    - Chi-Square test
 4. Supervised Learning
