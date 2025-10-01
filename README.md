@@ -31,7 +31,7 @@ Heart_Disease_Project/
 ## Methodology
 
 1. Data Preprocessing
-   - Handled missing values using imputation
+   - Handled missing values by removal
    - Encoded categorical variables with One-Hot Encoding
    - Visualized distributions and outliers with boxplots
 2. Dimensionality Reduction (PCA)
