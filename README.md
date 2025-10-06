@@ -1,13 +1,53 @@
-# Heart Disease Predictor
+# 🫀 Heart Disease Predictor
+A machine learning project that predicts the likelihood of heart disease using the UCI Heart Disease dataset. This project demonstrates a complete end-to-end ML workflow — including data preprocessing, dimensionality reduction, model evaluation, feature selection, hyperparameter tuning, and deployment via Streamlit with Ngrok for public access.
 
-This project applies Machine Learning techniques to predict the presence of heart disease using the UCI Heart Disease dataset. It includes data preprocessing, supervised & unsupervised learning, model evaluation, hyperparameter tuning and deployment through a Streamlit web app with Ngrok for public access.
+## 🚀 Features
+- Full machine learning pipeline from raw data to deployment
+- Data cleaning, encoding, and visualization
+- Dimensionality reduction using PCA
+- Model training with multiple supervised and unsupervised algorithms
+- Hyperparameter tuning (GridSearch & RandomizedSearch)
+- Interactive Streamlit web app for real-time predictions
+- Ngrok integration for easy sharing
 
-## Project Structure
+## 🧠 Methodology
+🧹 Data Preprocessing
+- Removed missing values and handled inconsistencies
+- Encoded categorical variables using One-Hot Encoding
+- Visualized distributions and detected outliers via boxplots
 
+📉 Dimensionality Reduction (PCA)
+- Applied Principal Component Analysis to reduce feature space while maintaining >90% variance
+- Determined optimal components through cumulative variance plots
+
+🧬 Feature Selection
+- Used XGBoost feature importance, Recursive Feature Elimination (RFE), and Chi-Square test
+- Identified an optimal subset of features for best model performance
+
+🤖 Supervised Learning
+- Trained and evaluated multiple classifiers:
+   - Logistic Regression
+   - Decision Tree
+   - Random Forest
+   - Support Vector Machine (SVM)
+- Metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC
+
+🧩 Unsupervised Learning
+- Applied KMeans (Elbow & Silhouette methods) and Hierarchical Clustering
+- Compared clusters with actual labels using ARI and crosstab analysis
+
+⚙️ Hyperparameter Tuning
+- Optimized models with GridSearchCV and RandomizedSearchCV
+- Selected the best-performing model (Logistic Regression) for deployment
+
+## 📂 Project Structure
 ```
 Heart_Disease_Project/
 ├── data/
-│ ├── heart_disease.csv # Processed dataset
+│ ├── heart+disease # UCI dataset
+│ ├── cleaned_heart_disease.csv # Processed data after cleaning & preprocessing
+│ ├── pca_heart_disease.csv # Data after PCA
+│ ├── selected_feature_heart_disease.csv # Data with optimized feature subset
 ├── notebooks/
 │ ├── 01_data_preprocessing.ipynb # Data cleaning & preprocessing
 │ ├── 02_pca_analysis.ipynb # PCA & dimensionality reduction
@@ -23,58 +63,38 @@ Heart_Disease_Project/
 │ ├── ngrok_setup.txt # Instructions for sharing app via ngrok
 ├── results/
 │ ├── evaluation_metrics.txt # Accuracy, F1, AUC scores
-├── README.md # Project documentation
 ├── requirements.txt # Dependencies
+├── README.md # Project documentation
 ├── .gitignore
+├── LICENSE
 ```
 
-## Methodology
+## 🧰 Technologies Used
+- Python — pandas, numpy, scikit-learn, xgboost, matplotlib, seaborn
+- Web App — Streamlit
+- Deployment — Ngrok
 
-1. Data Preprocessing
-   - Handled missing values by removal
-   - Encoded categorical variables with One-Hot Encoding
-   - Visualized distributions and outliers with boxplots
-2. Dimensionality Reduction (PCA)
-   - Reduced feature space while retaining 90%+ variance
-   - Cumulative variance plot to determine optimal components
-3. Feature Selection
-   - XGBoost feature importance
-   - Recursive Feature Elimination (RFE)
-   - Chi-Square test
-4. Supervised Learning
-   - Logistic Regression
-   - Decision Tree
-   - Random Forest
-   - Support Vector Machine (SVM)
-   - Metrics evaluated: Accuracy, Precision, Recall, F1-Score, AUC
-5. Unsupervised Learning
-   - KMeans (Elbow + Silhouette methods)
-   - Hierarchical Clustering with dendrograms
-   - Compared clustering with actual labels (ARI, crosstab)
-6. Hyperparameter Tuning
-   - Applied GridSearchCV and RandomizedSearchCV
-   - Selected the best model based on tuned performance
+## 📦 Installation & Usage
+1️⃣ Clone the repository
+```
+git clone https://github.com/GeorgeYoussefRoger/Heart-Disease-Predictor.git
+cd Heart-Disease-Predictor
+```
+2️⃣ Install dependencies
+```
+pip install -r requirements.txt
+```
+3️⃣ Run the Streamlit app
+```
+streamlit run ui/app.py
+```
+4️⃣ Share your app publicly (optional)
+Follow the steps in `deployment/ngrok_setup.txt` to share your app using Ngrok.
 
-## Dataset
+## 📂 Dataset
+- Source: [UCI Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease)
+- Used Subset: Cleveland database
 
-- Source: UCI Heart Disease Dataset => https://archive.ics.uci.edu/dataset/45/heart+disease
-- Used Cleveland database
-
-## Deployment
-
-1. Clone this repository and install dependencies:
-   ```
-   git clone https://github.com/GeorgeYoussefRoger/Heart-Disease-Predictor.git
-   ```
-   ```
-   cd Heart-Disease-Predictor
-   ```
-   ```
-   pip install -r requirements.txt
-   ```
-2. Run the Streamlit app
-   ```
-   streamlit run ui/app.py
-   ```
-3. Share to the internet with Ngrok:
-   See deployment/ngrok_setup.txt for step-by-step instructions.
+## 📜 License
+- This project is licensed under the MIT License.
+- See the `LICENSE` file for details.
