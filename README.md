@@ -7,7 +7,10 @@ This project applies Machine Learning techniques to predict the presence of hear
 ```
 Heart_Disease_Project/
 ├── data/
-│ ├── heart_disease.csv # Processed dataset
+│ ├── heart+disease # UCI dataset
+│ ├── cleaned_heart_disease.csv # Processed data after cleaning & preprocessing
+│ ├── pca_heart_disease.csv # Data after PCA
+│ ├── selected_feature_heart_disease.csv # Data with optimized feature subset
 ├── notebooks/
 │ ├── 01_data_preprocessing.ipynb # Data cleaning & preprocessing
 │ ├── 02_pca_analysis.ipynb # PCA & dimensionality reduction
