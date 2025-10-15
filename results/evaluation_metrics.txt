@@ -1,34 +1,36 @@
 === Logistic Regression Evaluation ===
-Accuracy: 0.85
-Precision: 0.9130434782608695
-Recall: 0.75
-F1 Score: 0.8235294117647058
-AUC Score: 0.9609375
+Accuracy: 0.9166666666666666
+Precision: 0.9523809523809523
+Recall: 0.8333333333333334
+F1 Score: 0.8888888888888888
+AUC Score: 0.9652777777777778
 
 === Decision Tree Evaluation ===
-Accuracy: 0.7333333333333333
-Precision: 0.7727272727272727
-Recall: 0.6071428571428571
-F1 Score: 0.68
-AUC Score: 0.7393973214285714
+Accuracy: 0.9
+Precision: 0.9090909090909091
+Recall: 0.8333333333333334
+F1 Score: 0.8695652173913043
+AUC Score: 0.9276620370370371
 
 === Random Forest Evaluation ===
-Accuracy: 0.7333333333333333
-Precision: 0.7307692307692307
-Recall: 0.6785714285714286
-F1 Score: 0.7037037037037037
-AUC Score: 0.8515625
+Accuracy: 0.8833333333333333
+Precision: 0.8695652173913043
+Recall: 0.8333333333333334
+F1 Score: 0.851063829787234
+AUC Score: 0.9479166666666667
 
 === SVM Evaluation ===
-Accuracy: 0.8333333333333334
-Precision: 0.9090909090909091
-Recall: 0.7142857142857143
-F1 Score: 0.8
-AUC Score: 0.9486607142857143
+Accuracy: 0.9
+Precision: 0.8461538461538461
+Recall: 0.9166666666666666
+F1 Score: 0.88
+AUC Score: 0.9513888888888888
 
-            === Model Comparison ===
+		=== Model Comparison ===
                         Baseline Accuracy  Tuned Accuracy
-Logistic Regression           0.850000        0.850000
-Decision Tree                 0.733333        0.816667
-Random Forest                 0.733333        0.833333
-SVM                           0.833333        0.850000
+Logistic Regression           0.916667        0.916667
+Decision Tree                 0.900000        0.916667
+Random Forest                 0.883333        0.916667
+SVM                           0.900000        0.866667
+
+- Since most of them got the same accuracy, We'll choose Logistic Regression for simplicity and speed
