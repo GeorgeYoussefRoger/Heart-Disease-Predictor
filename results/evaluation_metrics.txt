@@ -1,36 +1,40 @@
 === Logistic Regression Evaluation ===
-Accuracy: 0.9166666666666666
-Precision: 0.9523809523809523
-Recall: 0.8333333333333334
-F1 Score: 0.8888888888888888
-AUC Score: 0.9652777777777778
+Accuracy: 0.8333
+Precision: 0.8750
+Recall: 0.7500
+F1-Score: 0.8077
+AUC Score: 0.9219
 
 === Decision Tree Evaluation ===
-Accuracy: 0.9
-Precision: 0.9090909090909091
-Recall: 0.8333333333333334
-F1 Score: 0.8695652173913043
-AUC Score: 0.9276620370370371
+Accuracy: 0.6833
+Precision: 0.6800
+Recall: 0.6071
+F1-Score: 0.6415
+AUC Score: 0.6384
 
 === Random Forest Evaluation ===
-Accuracy: 0.8833333333333333
-Precision: 0.8695652173913043
-Recall: 0.8333333333333334
-F1 Score: 0.851063829787234
-AUC Score: 0.9479166666666667
+Accuracy: 0.7500
+Precision: 0.7826
+Recall: 0.6429
+F1-Score: 0.7059
+AUC Score: 0.8471
 
 === SVM Evaluation ===
-Accuracy: 0.9
-Precision: 0.8461538461538461
-Recall: 0.9166666666666666
-F1 Score: 0.88
-AUC Score: 0.9513888888888888
+Accuracy: 0.8333
+Precision: 0.8750
+Recall: 0.7500
+F1-Score: 0.8077
+AUC Score: 0.9252
 
-		=== Model Comparison ===
-                        Baseline Accuracy  Tuned Accuracy
-Logistic Regression           0.916667        0.916667
-Decision Tree                 0.900000        0.916667
-Random Forest                 0.883333        0.916667
-SVM                           0.900000        0.866667
 
-- Since most of them got the same accuracy, We'll choose Logistic Regression for simplicity and speed
+					Baseline Accuracy	Tuned Accuracy	Baseline ROC AUC	Tuned ROC AUC
+Logistic Regression			0.833333	0.833333				0.921875	0.921875
+Decision Tree				0.683333	0.816667				0.638393	0.833147
+Random Forest				0.750000	0.816667				0.847098	0.912946
+SVM							0.833333	0.833333				0.925223	0.925223
+
+
+Conclusion:
+- Logistic Regression and SVM got the same accuracy, we will choose logistic because it is less complex and faster
+- Random Forest showed moderate performance
+- Decision Tree showed great improvement after tuning
